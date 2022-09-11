@@ -9,7 +9,40 @@
 </head>
 <body>
   <h1>Challenge19</h1>
-  
+  <h2>Selecciona los Componente que deseas ingresar al carrito</h2>
+  <h3>Discos SSD</h3>
+  <button onclick="addComponent('wd 120gb')">WD 120GB</button>
+  <button onclick="addComponent('wd 240gb')">WD 240GB</button>
+  <button onclick="addComponent('wd 250gb')">WD 250GB</button>
+  <button onclick="addComponent('wd 500gb')">WD 500GB</button>
+  <button onclick="addComponent('wd 2tb')">WD 2TB</button>
+  <br>
+  <h3>Procesadores Intel</h3>
+  <button onclick="addComponent('pentium gold')">Pentium Gold</button>
+  <button onclick="addComponent('core i3')">Core I3</button>
+  <button onclick="addComponent('core i5')">Core I5</button>
+  <button onclick="addComponent('core i7')">Core I7</button>
+  <button onclick="addComponent('core i9')">Core I9</button>
+  <br>
+  <h3>MotherBoards</h3>
+  <button onclick="addComponent('asus prime')">Asus Prime</button>
+  <button onclick="addComponent('asrock')">Asrock</button>
+  <button onclick="addComponent('gigabyte')">Gigabyte</button>
+  <button onclick="addComponent('msi pro')">MSI Pro</button>
+  <button onclick="addComponent('asus rog')">Asus Rog</button>
+  <br>
+  <h3>Memorias RAM</h3>
+  <button onclick="addComponent('ddr4 8gb')">DDR4 8Gb</button>
+  <button onclick="addComponent('ddr4 16gb')">DDR4 16Gb</button>
+  <button onclick="addComponent('ddr5 16gb')">DDR5 16Gb</button>
+  <button onclick="addComponent('ddr4 4gb')">DDR4 4Gb</button>
+  <button onclick="addComponent('ddr5 8gb')">DDR5 8Gb</button>
+  <br><br><hr>
+  <h2>Tu carrito</h2>
+  <button onclick="getCart()">Ver Carrito</button>
+  <button onclick="searchComponentCart()">Buscar en Carrito</button>
+  <button onclick="filterComponents()">Filtrar Componentes</button>
+  <button onclick="deleteComponents()">Eliminar un Componente</button>
   <script src="/js/challenge19.js"></script>
 </body>
 </html>
