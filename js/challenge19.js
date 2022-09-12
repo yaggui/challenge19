@@ -1,4 +1,4 @@
-const cart=[];
+let cart=[];
 const components=['wd 120gb','wd 240gb','wd 250gb','wd 500gb','wd 2tb','pentium gold','core i3','core i5','core i7','core i9','asus prime','asrock','gigabyte','msi pro','asus rog','ddr4 8gb','ddr4 16gb','ddr5 16gb','ddr4 4gb','ddr5 8gb'];
 const addComponent= (component) => {
   cart.push(component);
@@ -6,7 +6,7 @@ const addComponent= (component) => {
 }
 const getCart= () => {
   if(cart.length!=0){
-    alert("Los componentes del carrito son:\n"+ cart.join("\n "));
+    alert("Los componentes del carrito son:\n"+ cart.join("\n"));
   }else{
     alert("Carrito Vacio");
   }
@@ -34,6 +34,15 @@ const deleteComponents= () => {
     deleteCart=cart.splice(positionComponent,1);
     alert(`Componente ${deleteCart} esta Eliminado del carrito`);
   }else{
+    alert("Componente no se pudo eliminar, no esta en carrito");
+  }
+}
+const deleteComponentCart= () => {
+  const inputComponent=prompt("Ingresa el componente a eliminar:").toLowerCase();
+  if (cart.includes(inputComponent)) {
+    cart=cart.filter(item=>item!=inputComponent);
+    alert(`Componente ${inputComponent} esta Eliminado del carrito`);
+  } else {
     alert("Componente no se pudo eliminar, no esta en carrito");
   }
 }
